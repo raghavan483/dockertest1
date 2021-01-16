@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build Docker Image') {
           steps {
-		    sh 'cd  /var/lib/jenkins/workspace/pipelinetestprod/dockertest1'
+            sh 'cd  /var/lib/jenkins/workspace/pipelinetestprod/dockertest1'
             sh 'cp /var/lib/jenkins/workspace/pipelinetestprod/dockertest1/* /var/lib/jenkins/workspace/pipelinetestprod '
             sh 'docker build -t raghu3062/pipelinetestprod:${BUILD_NUMBER} .'
             }
