@@ -13,7 +13,7 @@ pipeline {
           steps {
             sh 'cd  /var/lib/jenkins/workspace/pipelinetestprod/dockertest1'
             sh 'cp /var/lib/jenkins/workspace/pipelinetestprod/dockertest1/* /var/lib/jenkins/workspace/pipelinetestprod '
-            sh 'docker build -t raghu3062/pipelinetestprod:${BUILD_NUMBER} .'
+            sh 'docker build -t raghu3062/featurewebapp1:${BUILD_NUMBER} .'
             }
         }
 
