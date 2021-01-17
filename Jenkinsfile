@@ -19,7 +19,7 @@ pipeline {
 
         stage('Push Image to Docker Hub') {
           steps {
-           sh    'docker push raghu3062/pipelinetestprod:${BUILD_NUMBER}'
+           sh    'docker push raghu3062/featurewebapp1:${BUILD_NUMBER}'
            }
         }
 
